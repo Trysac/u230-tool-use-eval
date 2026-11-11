@@ -9,4 +9,5 @@ adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ### Added
 
+- Added tool-use-eval library for scoring function-call predictions with schema checks, acceptable-value sets, order-insensitive matching, and CLI.
 - Initial project structure from the factory utility template.

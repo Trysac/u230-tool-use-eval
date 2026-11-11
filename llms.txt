@@ -1,16 +1,15 @@
 # tool-use-eval
 
-> Score function-calling outputs against expected calls: schema checks, acceptable-value sets per argument, order-insensitive parallel calls and per-failure-code summaries Python package `trysac-tool-use-eval`, import name `tool_use_eval`, MIT licensed,
-> Python >= 3.10, no runtime dependencies.
+> Score function-calling outputs against expected calls: schema checks, acceptable-value sets per argument, order-insensitive parallel calls and per-failure-code summaries. Python package `trysac-tool-use-eval`, import name `tool_use_eval`, MIT licensed, Python >= 3.10, no runtime dependencies.
 
 ## Docs
 
-- [README](README.md): problem, install, usage example
-- [AGENTS](AGENTS.md): commands, folder map, conventions, limits
-- [Architecture](docs/ARCHITECTURE.md): shape of the package and its public API
-- [Testing](docs/TESTING.md): how to run and extend the tests
+- [README](README.md): problem, install, usage example, public API and errors
+- [Project record](docs/PROJECT.md): objective, scope and out-of-scope
+- [Security](docs/SECURITY.md): threat model and limits
+- [Testing](docs/TESTING.md): test files present in the repository
+- [Architecture](docs/ARCHITECTURE.md): module shape and public API
 
 ## Optional
 
-- [Stack](docs/STACK.md): tools used and discarded
-- [Changelog](CHANGELOG.md): release history
+- [Stack](docs/STACK.md): tools used by the code
