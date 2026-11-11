@@ -2,28 +2,16 @@
 
 ## Running
 
-```sh
-uv run pytest --cov=tool_use_eval   # tests with coverage report
-uv run python scripts/check.py      # every gate, as CI and the factory run it
-```
+No test files are included in the provided repository contents. There is no test command to run from this snapshot.
 
 ## Policy
 
-- Branch coverage of `src/tool_use_eval` must stay at or above 80 %; the gate fails below it.
-- Tests exercise the public API (`import tool_use_eval`) and assert every observable effect:
-  return values, raised exceptions and their messages.
-- Each bug fix starts with a failing test that reproduces it.
-- Tests are deterministic: no network, no wall clock, no dependence on test order.
+No test suite, coverage threshold, or CI test gate is present in the provided files. The acceptance examples in the specification describe expected behavior but are not test files in the repository.
 
 ## Tiers
 
-- Local tier (every gate run, coverage measured here): unit and property tests, plus conformance on small
-  fixtures kept in the repository.
-- CI tier: conformance that needs an external tool or a download. Mark them `@pytest.mark.conformance`; `scripts/check.py` deselects them locally
-  (unless `FABRICA_CI=1`). The CI `conformance` job sets `FABRICA_CI=1` and runs the full suite. Tools are installed
-  by the optional `ci/conformance-setup.sh` (bash, CI only; verify every download against a pinned SHA-256), and
-  tagged tests skip cleanly when their tool is missing.
+No local or CI test tiers, `@pytest.mark.conformance` markers, or conformance setup scripts are included in the provided files.
 
 ## Layout
 
-`tests/test_<module>.py` mirrors each public module. Shared fixtures go in `tests/conftest.py`.
+No `tests/` directory or `tests/test_<module>.py` files are included. The package code is the single module `src/tool_use_eval/__init__.py`.
